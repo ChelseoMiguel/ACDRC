@@ -82,6 +82,10 @@
     display: none;
 }
 
+.text-1{
+    color: white;
+}
+
 /* responsive media queries */
 @media (max-width: 1300px){
 
