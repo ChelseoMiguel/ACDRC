@@ -85,6 +85,37 @@
 .text-1{
     color: white;
 }
+.text-3,.text-4,.text-5{
+    font-size: 1.2em;
+    line-height:1.5;
+    font-weight: bold;
+}
+
+.about a{
+    display: inline-block;
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid red;
+    text-align: center;
+    cursor: pointer;
+}
+.about a:hover{
+    color: red;
+    background: rgba(255, 255, 255, 0.7);
+    
+}
+
+.about{
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
 
 /* responsive media queries */
 @media (max-width: 1300px){
@@ -131,6 +162,11 @@
         max-width: 800px;
     }
 }
+.vmo-context{
+    float: left;
+    width: 50%;
+}
+
 @media (max-width: 690px){
     .max-width{
         padding: 0 23px;
