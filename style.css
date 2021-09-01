@@ -116,6 +116,28 @@
     line-height: 1.5;
     font-size: 1.2em;
 }
+.vmo-content{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(177, 172, 172);
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    width: auto;
+}
+
+.text-3a,.text-4a,.text-5a,.text-6a{
+   
+    background-color:white;
+    width: 300px;
+    margin: 50px;
+    text-align: center;
+    line-height: normal;
+    padding:20px;
+    margin-left: 90px;
+    height: auto;
+    border: 3px solid red;
+    
+}
 
 /* responsive media queries */
 @media (max-width: 1300px){
@@ -162,10 +184,7 @@
         max-width: 800px;
     }
 }
-.vmo-context{
-    float: left;
-    width: 50%;
-}
+
 
 @media (max-width: 690px){
     .max-width{
