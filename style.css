@@ -211,7 +211,7 @@
 }
 body {
     display: flex;
-    place-content: end;
+    
     flex-direction: column;
     height: 100vh;
   }
