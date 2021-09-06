@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Contact Us</title>
+    <style>
+.Contact_container {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+input[type=text], select, textarea {
+  width:100%;
+  padding: 10px; 
+  margin-bottom: 14px;
+  margin-top: 8px;
+  box-sizing: border-box;  
+  border: 1px solid black;
+}
+
+input[type=submit] {
+  background-color:red;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  
+}
+
+
+input[type=submit]:hover {
+  background-color:rgb(177, 172, 172);
+}
+.Infor-container{
+    padding-top: 120px;
+    
+}
+.infor-row{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+}
+.country{
+    padding: 15px;
+    margin: 10px 10px 10px 10px;
+
+}
+.Infor-container h1{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+          <div class="logo">
+            <img src="pictures/ACDRC_Logo.jpg" alt="logo" />
+          </div>
+          <ul class="menu">
+            <li><a href="#" class="menu-btn">Home</a></li>
+            <li><a href="#" class="menu-btn">Services</a></li>
+            <li><a href="#" class="menu-btn">Gallery</a></li>
+            <li><a href="#" class="menu-btn">About</a></li>
+            <li><a href="#" class="menu-btn">Contact</a></li>
+          </ul>
+          <div class="menu-btn">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="Infor-container">
+          <h1 style="text-align: center;">Contact Us</h1>
+          <p style="text-align: center; color: red;">Give us a call for more information about our services:</p>
+          <div class="infor-row">
+        <div class="country">
+            <h2 style="text-align: left;">Contact us in Zimbabwe</h2>
+        <a class="contact_item" href="#"><i class="fab fa-telephone"></i></a>
+        <p>Tel: (263)773256345</p>
+        <a class="contact_item" href="#"><i class="fab fa-email"></i></a>
+        <p>E-mail: projects@acdrcenter.org</p>
+        <a class="contact_item" href="#"><i class="fab fa-address"></i></a>
+        <p>Address: Agriculture House, Suite G23B (Ground Floor), 
+        1 Adylinn Road, Marl-borough, Harare, Zimbabwe</p>
+        </div>
+        <div class="country">
+            <h2 style="text-align:left;">Contact us in Kenya</h2>
+        <a class="contact_item" href="#"><i class="fab fa-telephone"></i></a>
+        <p>Tel: (254)722783123</p>
+        <a class="contact_item" href="#"><i class="fab fa-e-mail"></i></a>
+        <p>E-mail: projects-kenya@acdrcenter.org</p>
+        <a class="contact_item" href="#"><i class="fab fa-address"></i></a>
+        <p>Address: Simba Villas, Suite E10, Box 297—00202,
+        KNH, Nairobi, Kenya</p>
+        </div>
+        <div class="country">
+            <h2 style="text-align:left;">Contact us in Botswana</h2>
+        <a class="contact_item" href="#"><i class="fab fa-telephone"></i></a>
+        <p>Tel: (267)75520762</p>
+        <a class="contact_item" href="#"><i class="fab fa-e-mail"></i></a>
+        <p>E-mail: projects-Botswana@acdrcenter.org</p>
+        <a class="contact_item" href="#"><i class="fab fa-address"></i></a>
+        <p>Address: Plot 7830 Maruapula, Box AE 426 AEH, Gaborone, Botswana</p>
+        </div>
+        <div class="country">
+            <h2 style="text-align:left;">Contact us in Rwanda</h2>
+        <a class="contact_item" href="#"><i class="fab fa-telephone"></i></a>
+        <p>Tel: (250)78885610</p>
+        <a class="contact_item" href="#"><i class="fab fa-e-mail"></i></a>
+        <p>E-mail: projects-rwanda@acdrcenter.org</p>
+        <a class="contact_item" href="#"><i class="fab fa-address"></i></a>
+        <p>Address: Gizozi, Kigali City, Rwanda</p>
+        </div>
+        </div>
+      </div>
+
+      <div class="Contact_container">
+        <div style="text-align:center">
+            <h2>Any Queries</h2>
+            <p>For more information about our services leave a message:</p>
+          </div>
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="Sname">Last Name</label>
+          <input type="text" id="Sname" name="Surname" placeholder="Your last name..">
+          <label for="message">Subject</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+</form>
+</div>
+<footer>
+    <div class="art">
+      <div class="content">
+        <section>
+          <header>Help</header>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy&Policy</a>
+        </section>
+        <section>
+          <header>Our Weekly Newsletter</header>
+          <form action="">
+            <input type="email" placeholder="Enter your Email" id="" />
+            <input type="submit" value="Sign-up" />
+          </form>
+        </section>
+        <section>
+          <header>Follow Us</header>
+          <div class="social_media">
+            <a class="social_item" href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="social_item" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="social_item" href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </section>
+      </div>
+      <div class="notice">
+        Copyright Protected &copy;
+        <strong>UNAM Students</strong>
+        <p class="designers">
+          Designed by Tinomudaishe Marumahoko, Novuyo Ndlovu, Chelseo Sebastio
+          & Tinevimbo Chitando
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
