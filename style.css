@@ -82,8 +82,6 @@
     display: none;
 }
 
-<<<<<<< HEAD
-=======
 .text-1{
     color: white;
 }
@@ -141,7 +139,6 @@
     
 }
 
->>>>>>> f1cacbb06b5e1c38f980da52f75802ddbf86962e
 /* responsive media queries */
 @media (max-width: 1300px){
 
@@ -187,11 +184,8 @@
         max-width: 800px;
     }
 }
-<<<<<<< HEAD
-=======
 
 
->>>>>>> f1cacbb06b5e1c38f980da52f75802ddbf86962e
 @media (max-width: 690px){
     .max-width{
         padding: 0 23px;
@@ -214,9 +208,6 @@
     .home .home-content .text-2{
         font-size: 16px;
     }
-<<<<<<< HEAD
-}
-=======
 }
 body {
     display: flex;
@@ -307,4 +298,3 @@ body {
     text-transform: uppercase;
   }
   
->>>>>>> f1cacbb06b5e1c38f980da52f75802ddbf86962e
