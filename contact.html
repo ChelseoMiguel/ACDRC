@@ -57,9 +57,27 @@
         padding-bottom: 30px;
         padding-top: 30px;
       }
+      .heading{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap: 40px;
+      }
       em{
         color: dimgrey;
         font-weight: 600;
+      }
+      .title-image{
+       position: relative;
+       text-align: center;
+       color: white;
+      }
+      .title{
+        position: absolute;
+        color:dimgray;
+        top: 50%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        font-size: 75px;
       }
     </style>
   </head>
@@ -82,8 +100,14 @@
       </div>
     </nav>
     <div class="Infor-container">
-      <h1 style="text-align: center">Contact Us</h1>
-      <p style="text-align: center; color: red">
+      <section class="heading">
+        <img src="/pictures/contact-icons.jpg" style="width: 200px; height: 250px;object-fit: contain;">
+        <div class="title-image">
+      <img src="/pictures/Picture1.jpg" style="width: 1000px; height: 250px; object-fit: contain;">
+      <div class="title">Contact Us</div>
+      </div>
+      </section>
+      <p style="text-align: center; color: red; font-size: 20px;">
         Give us a call for more information about our services:
       </p>
       <div class="infor-row">
