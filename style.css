@@ -46,7 +46,6 @@
   background: url(/pictures/annie-spratt-1YnBzhJISg4-unsplash.jpg) no-repeat
     center;
   background-size: cover;
-  height: 100vh;
   min-height: 500px;
   text-align: center;
 }
