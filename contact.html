@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/c5495cedff.js" crossorigin="anonymous"></script>
 
     <title>Contact Us</title>
     <style>
@@ -32,7 +33,7 @@
       }
 
       input[type="submit"]:hover {
-        background-color: rgb(177, 172, 172);
+        transform: scale(0.90);
       }
       .Infor-container {
         padding-top: 120px;
@@ -46,9 +47,37 @@
         padding: 15px;
         margin: 10px 10px 10px 10px;
       }
+      .C-items{
+        display: grid;
+        grid-template-columns: 18px 500px;
+        gap: 10px;
+        
+      }
       .Infor-container h1 {
         padding-bottom: 30px;
         padding-top: 30px;
+      }
+      .heading{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap: 40px;
+      }
+      em{
+        color: dimgrey;
+        font-weight: 600;
+      }
+      .title-image{
+       position: relative;
+       text-align: center;
+       color: white;
+      }
+      .title{
+        position: absolute;
+        color:dimgray;
+        top: 50%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        font-size: 75px;
       }
     </style>
   </head>
@@ -71,53 +100,83 @@
       </div>
     </nav>
     <div class="Infor-container">
-      <h1 style="text-align: center">Contact Us</h1>
-      <p style="text-align: center; color: red">
+      <section class="heading">
+        <img src="/pictures/contact-icons.jpg" style="width: 200px; height: 250px;object-fit: contain;">
+        <div class="title-image">
+      <img src="/pictures/Picture1.jpg" style="width: 1000px; height: 250px; object-fit: contain;">
+      <div class="title">Contact Us</div>
+      </div>
+      </section>
+      <p style="text-align: center; color: red; font-size: 20px;">
         Give us a call for more information about our services:
       </p>
       <div class="infor-row">
         <div class="country">
           <h2 style="text-align: left">Contact us in Zimbabwe</h2>
-          <a class="contact_item" href="#"><i class="fab fa-telephone"></i></a>
-          <p>Tel: (263)773256345</p>
-          <a class="contact_item" href="#"><i class="fab fa-email"></i></a>
-          <p>E-mail: projects@acdrcenter.org</p>
-          <a class="contact_item" href="#"><i class="fab fa-address"></i></a>
+          <div class="C-items">
+          <a class="contact_item" href="#"><i class="fas fa-phone-alt" style="color: red; margin-bottom: 10px;"></i></a>
+          <p><em>Tel:</em> (263)773256345</p>
+          </div>
+          <div class="C-items">
+          <a class="contact_item" href="#"><i class="fas fa-at" style="color: red; margin-bottom: 10px;"></i></a>
+          <p><em>E-mail:</em> projects@acdrcenter.org</p>
+          </div>
+          <div class="C-items">
+          <a class="contact_item" href="#"><i class="fas fa-map-marker" style="color: red; margin-bottom: 10px;"></i></a>
           <p>
-            Address: Agriculture House, Suite G23B (Ground Floor), 1 Adylinn
+            <em>Address:</em> Agriculture House, Suite G23B (Ground Floor), 1 Adylinn
             Road, Marl-borough, Harare, Zimbabwe
           </p>
+          </div>
         </div>
         <div class="country">
           <h2 style="text-align: left">Contact us in Kenya</h2>
-          <a class="contact_item" href="#"><i class="fab fa-telephone"></i></a>
-          <p>Tel: (254)722783123</p>
-          <a class="contact_item" href="#"><i class="fab fa-e-mail"></i></a>
-          <p>E-mail: projects-kenya@acdrcenter.org</p>
-          <a class="contact_item" href="#"><i class="fab fa-address"></i></a>
+          <div class="C-items">
+          <a class="contact_item" href="#"><i class="fas fa-phone-alt" style="color: red; margin-bottom: 10px;"></i></a>
+          <p><em>Tel:</em> (254)722783123</p>
+          </div>
+          <div class="C-items">
+          <a class="contact_item" href="#"><i class="fas fa-at" style="color: red; margin-bottom: 10px;"></i></a>
+          <p><em>E-mail:</em> projects-kenya@acdrcenter.org</p>
+          </div>
+          <div class="C-items">
+          <a class="contact_item" href="#"><i class="fas fa-map-marker" style="color: red; margin-bottom: 10px;"></i></a>
           <p>
-            Address: Simba Villas, Suite E10, Box 297—00202, KNH, Nairobi, Kenya
+            <em>Address:</em> Simba Villas, Suite E10, Box 297—00202, KNH, Nairobi, Kenya
           </p>
+          </div>
         </div>
         <div class="country">
           <h2 style="text-align: left">Contact us in Botswana</h2>
-          <a class="contact_item" href="#"><i class="fab fa-telephone"></i></a>
-          <p>Tel: (267)75520762</p>
-          <a class="contact_item" href="#"><i class="fab fa-e-mail"></i></a>
-          <p>E-mail: projects-Botswana@acdrcenter.org</p>
-          <a class="contact_item" href="#"><i class="fab fa-address"></i></a>
+          <div class="C-items">
+          <a class="contact_item" href="#"><i class="fas fa-phone-alt" style="color: red; margin-bottom: 10px;"></i></a>
+          <p><em>Tel:</em> (267)75520762</p>
+          </div>
+          <div class="C-items">
+          <a class="contact_item" href="#"><i class="fas fa-at" style="color: red; margin-bottom: 10px;"></i></a>
+          <p><em>E-mail:</em> projects-Botswana@acdrcenter.org</p>
+          </div>
+          <div class="C-items">
+          <a class="contact_item" href="#"><i class="fas fa-map-marker" style="color: red; margin-bottom: 10px;"></i></a>
           <p>
-            Address: Plot 7830 Maruapula, Box AE 426 AEH, Gaborone, Botswana
+            <em>Address:</em> Plot 7830 Maruapula, Box AE 426 AEH, Gaborone, Botswana
           </p>
+          </div>
         </div>
         <div class="country">
           <h2 style="text-align: left">Contact us in Rwanda</h2>
-          <a class="contact_item" href="#"><i class="fab fa-telephone"></i></a>
-          <p>Tel: (250)78885610</p>
-          <a class="contact_item" href="#"><i class="fab fa-e-mail"></i></a>
-          <p>E-mail: projects-rwanda@acdrcenter.org</p>
-          <a class="contact_item" href="#"><i class="fab fa-address"></i></a>
-          <p>Address: Gizozi, Kigali City, Rwanda</p>
+          <div class="C-items">
+          <a class="contact_item" href="#"><i class="fas fa-phone-alt" style="color: red; margin-bottom: 10px;"></i></a>
+          <p><em>Tel:</em> (250)78885610</p>
+          </div>
+          <div class="C-items">
+          <a class="contact_item" href="#"><i class="fas fa-at" style="color: red; margin-bottom: 10px;"></i></a>
+          <p><em>E-mail:</em> projects-rwanda@acdrcenter.org</p>
+          </div>
+          <div class="C-items">
+          <a class="contact_item" href="#"><i class="fas fa-map-marker" style="color: red; margin-bottom: 10px;"></i></a>
+          <p><em>Address:</em> Gizozi, Kigali City, Rwanda</p>
+          </div>
         </div>
       </div>
     </div>
