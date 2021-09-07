@@ -7,6 +7,34 @@
     <link rel="stylesheet" href="style.css" />
     <title>ACDRC</title>
     <style>
+      h1{
+        font-size: 36px;
+        text-align: center;
+        color: black;
+        margin: 100px 0 20px 0;
+      }
+      .galleryPictures{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .galleryPictures img{
+        width: 400px;
+        height: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all ease-in-out 0.4s;
+      }
+      .galleryPictures img:hover{
+        width: 500px;
+        z-index: 999;
+        height: auto;
+        transform: scale(1.2);
+        text-shadow: 2px 2px 4px #222;
+      }
+
+
       footer {
         background-color: grey;
         line-height: 24px;
@@ -109,7 +137,11 @@
         </div>
       </div>
     </nav>
-    <div class="galleryPictures">
+    <br>
+    <div>
+      <h1>Gallery</h1>
+    </div>
+     <div class="galleryPictures">
       <img src="pictures/Boardroom-meeting.jpg" alt="boardroom" />
       <img src="pictures/Field-work.jpg" alt="fieldwork" />
       <img src="pictures/Grassroots.jpg" alt="grassroots" />
