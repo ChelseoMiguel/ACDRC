@@ -15,7 +15,7 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
-    <title>ACDRC_about</title>
+    <title>ACDRC</title>
 
     <style>
       * {
@@ -42,11 +42,11 @@
       .aboutp h3 {
         text-align: center;
         margin: 50px;
-        font-size: 25;
+        font-size: 25px;
         margin-bottom: 0px;
         text-decoration: 2px underline;
       }
-      .aboutp p {
+      #parag{
         margin: 50px;
         text-align: justify;
         font-size: 18px;
@@ -58,7 +58,8 @@
         margin-left: 30%;
       }
       #dev {
-        margin-top: 20px;
+        margin: 50px;
+        
       }
       ul.list{
           list-style-type: circle;
@@ -72,12 +73,42 @@
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
           0 6px 20px 0 rgba(0, 0, 0, 0.19);;
       }
-      .team img{
-    margin-left: 40px;
-    width: 300px;
-    clip-path: circle();
-    margin-top: 20px;
-     } 
+      .team-container{
+    margin: 20px 40px;
+}
+.heading{
+    font-size: 25px;
+    text-align: center;
+}
+
+.members{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 80px;
+}
+.member{
+    flex-basis: 260px;
+}
+.member .picture{
+    height: 260px;
+    width: 260px;
+    cursor: pointer;
+    
+}
+.names{
+    margin-top: 30px;
+    font-size: 22px;
+}
+.profile h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.info{
+  margin-top: 8px;
+  text-align: left;
+  margin-left: 15px;
+ 
+}
     </style>
     <script type="text/javascript">
     function subscription(){
@@ -106,7 +137,7 @@
     <section class="aboutp" id="aboutp">
       <h1>About ACDRC</h1>
       <h2>Our exciting story of Generating knowledge| Building capacity</h2>
-      <p>
+      <p id="parag">
         Africa Community Development and Research Center (ACDRC) is so far
         registered and vibrantly operational in six East and Southern African
         countries namely Zimbabwe (Southern Africa and overall headquarters),
@@ -165,11 +196,43 @@
           <h3>ACDRC Regional Structure</h3>
           <img src="pictures/Screenshot (7).png" alt="Regional Structure" class="screenshot">
       </div>
-      <h3>OUR TEAM</h3>
-      <div class="team">
-          <img src="pictures/marius.png" alt="Marius"/> 
-          <img src="pictures/sarah.png" alt="Sarah"/>
-      </div>
+      <div class="team-container">
+        <h3 class="heading">Our Team Members</h3>
+        <div class="members">
+            <div class="member">
+                <img src="pictures/Makoni.png" alt="Makoni" class="picture">
+                <h4 class="names">Kudzai Makoni</h4>
+                <h5>Title</h5>
+                <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
+                 in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
+                 nisi magni consequatur sed?</p>
+            </div>
+            <div class="member">
+                <img src="pictures/Rwodzi.png" alt="Rwodzi" class="picture">
+                <h4 class="names">Thandiwe Rwodzi</h4>
+                <h5>Title</h5>
+                <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
+                 in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
+                 nisi magni consequatur sed?</p>
+            </div>
+            <div class="member">
+                <img src="pictures/sarah.png" alt="Sarah" class="picture">
+                <h4 class="names">Sarah</h4>
+                <h5>Title</h5>
+                <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
+                 in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
+                 nisi magni consequatur sed?</p>
+            </div>
+            <div class="member">
+                <img src="pictures/marius.png" alt="Marius" class="picture">
+                <h4 class="names">Marius</h4>
+                <h5>Title</h5>
+                <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
+                 in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
+                 nisi magni consequatur sed?</p>
+            </div>
+        </div>
+    </div>
     </section>
 
     <footer>
