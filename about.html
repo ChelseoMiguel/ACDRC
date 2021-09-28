@@ -114,6 +114,15 @@
     function subscription(){
       alert("Thank you for joining our newsletter");
     }
+      function bigger(sizeImg){
+          sizeImg.style.height = "300px";
+          sizeImg.style.width = "300px";
+        }
+        function normal(sizeImg){
+            sizeImg.style.height = "260px";
+            sizeImg.style.width = "260px";
+        }
+    
     </script>
   </head>
   <body>
@@ -200,7 +209,8 @@
         <h3 class="heading">Our Team Members</h3>
         <div class="members">
             <div class="member">
-                <img src="pictures/Makoni.png" alt="Makoni" class="picture">
+                <img src="pictures/Makoni.png" alt="Makoni" class="picture"  
+                onmouseover="bigger(this)" onmouseout="normal(this)">
                 <h4 class="names">Kudzai Makoni</h4>
                 <h5>Title</h5>
                 <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
@@ -208,7 +218,8 @@
                  nisi magni consequatur sed?</p>
             </div>
             <div class="member">
-                <img src="pictures/Rwodzi.png" alt="Rwodzi" class="picture">
+                <img src="pictures/Rwodzi.png" alt="Rwodzi" class="picture" 
+                onmouseover="bigger(this)" onmouseout="normal(this)">
                 <h4 class="names">Thandiwe Rwodzi</h4>
                 <h5>Title</h5>
                 <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
@@ -216,7 +227,8 @@
                  nisi magni consequatur sed?</p>
             </div>
             <div class="member">
-                <img src="pictures/sarah.png" alt="Sarah" class="picture">
+                <img src="pictures/sarah.png" alt="Sarah" class="picture" 
+                onmouseover="bigger(this)" onmouseout="normal(this)">
                 <h4 class="names">Sarah</h4>
                 <h5>Title</h5>
                 <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
@@ -224,7 +236,8 @@
                  nisi magni consequatur sed?</p>
             </div>
             <div class="member">
-                <img src="pictures/marius.png" alt="Marius" class="picture">
+                <img src="pictures/marius.png" alt="Marius" class="picture"  
+                onmouseover="bigger(this)" onmouseout="normal(this)">
                 <h4 class="names">Marius</h4>
                 <h5>Title</h5>
                 <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
