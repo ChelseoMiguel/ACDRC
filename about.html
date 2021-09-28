@@ -82,18 +82,37 @@
 }
 
 .members{
-    display: flex;
+    display: flex;flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px 80px;
 }
 .member{
     flex-basis: 260px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
 }
 .member .picture{
     height: 260px;
     width: 260px;
     cursor: pointer;
     
+}
+.member span{
+  display: none;
+}
+.member .read-more{
+  margin: 10px;
+  color: red;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.member .read-more:hover{
+  text-decoration: underline;
+}
+.member .span-read-more.active{
+  display: inline;
+  transition: all 0.5s ease-in-out;
 }
 .names{
     margin-top: 30px;
@@ -214,8 +233,11 @@
                 <h4 class="names">Kudzai Makoni</h4>
                 <h5>Title</h5>
                 <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
-                 in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
-                 nisi magni consequatur sed?</p>
+                  in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
+                  nisi magni consequatur sed? <span class="span-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                   Cumque neque beatae fuga eius adipisci saepe vitae ad, vero quod laboriosam voluptas voluptates eveniet nemo, numquam 
+                   dicta amet harum corporis unde.</span></p>
+                   <p class="read-more">read more</p>
             </div>
             <div class="member">
                 <img src="pictures/Rwodzi.png" alt="Rwodzi" class="picture" 
@@ -223,8 +245,11 @@
                 <h4 class="names">Thandiwe Rwodzi</h4>
                 <h5>Title</h5>
                 <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
-                 in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
-                 nisi magni consequatur sed?</p>
+                  in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
+                  nisi magni consequatur sed? <span class="span-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                   Cumque neque beatae fuga eius adipisci saepe vitae ad, vero quod laboriosam voluptas voluptates eveniet nemo, numquam 
+                   dicta amet harum corporis unde.</span></p>
+                   <p class="read-more">read more</p>
             </div>
             <div class="member">
                 <img src="pictures/sarah.png" alt="Sarah" class="picture" 
@@ -232,8 +257,11 @@
                 <h4 class="names">Sarah</h4>
                 <h5>Title</h5>
                 <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
-                 in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
-                 nisi magni consequatur sed?</p>
+                  in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
+                  nisi magni consequatur sed? <span class="span-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                   Cumque neque beatae fuga eius adipisci saepe vitae ad, vero quod laboriosam voluptas voluptates eveniet nemo, numquam 
+                   dicta amet harum corporis unde.</span></p>
+                   <p class="read-more">read more</p>
             </div>
             <div class="member">
                 <img src="pictures/marius.png" alt="Marius" class="picture"  
@@ -241,9 +269,60 @@
                 <h4 class="names">Marius</h4>
                 <h5>Title</h5>
                 <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
-                 in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
-                 nisi magni consequatur sed?</p>
+                  in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
+                  nisi magni consequatur sed? <span class="span-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                   Cumque neque beatae fuga eius adipisci saepe vitae ad, vero quod laboriosam voluptas voluptates eveniet nemo, numquam 
+                   dicta amet harum corporis unde.</span></p>
+                   <p class="read-more">read more</p>
             </div>
+            <div class="member">
+              <img src="pictures/olivia.JPG" alt="Olivia" class="picture"  
+              onmouseover="bigger(this)" onmouseout="normal(this)">
+              <h4 class="names">Dr Olivia Opere</h4>
+              <h5>Title</h5>
+              <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
+               in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
+               nisi magni consequatur sed? <span class="span-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+               Cumque neque beatae fuga eius adipisci saepe vitae ad, vero quod laboriosam voluptas voluptates eveniet nemo, numquam 
+               dicta amet harum corporis unde.</span></p>
+               <p class="read-more">read more</p>
+          </div>
+          <div class="member">
+            <img src="pictures/neema.JPG" alt="Neema" class="picture"  
+            onmouseover="bigger(this)" onmouseout="normal(this)">
+            <h4 class="names">Dr Neema Kumburu Tanzania</h4>
+            <h5>Title</h5>
+            <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
+             in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
+             nisi magni consequatur sed? <span class="span-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Cumque neque beatae fuga eius adipisci saepe vitae ad, vero quod laboriosam voluptas voluptates eveniet nemo, numquam 
+              dicta amet harum corporis unde.</span></p>
+              <p class="read-more">read more</p>
+          </div>
+          <div class="member">
+            <img src="pictures/victoria.JPG" alt="victoria" class="picture"  
+            onmouseover="bigger(this)" onmouseout="normal(this)">
+            <h4 class="names">Victoria Ndarukwa</h4>
+            <h5>Title</h5>
+            <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
+              in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
+              nisi magni consequatur sed? <span class="span-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+               Cumque neque beatae fuga eius adipisci saepe vitae ad, vero quod laboriosam voluptas voluptates eveniet nemo, numquam 
+               dicta amet harum corporis unde.</span></p>
+               <p class="read-more">read more</p>
+          </div>
+          <div class="member">
+            <img src="pictures/ange.JPG" alt="Ange" class="picture"  
+            onmouseover="bigger(this)" onmouseout="normal(this)">
+            <h4 class="names">Mr Ange Marius</h4>
+            <h5>Title</h5>
+            <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi neque temporibus fugiat iure
+              in? Quae autem laboriosam, praesentium minus esse similique laudantium totam illum nihil quia, 
+              nisi magni consequatur sed? <span class="span-read-more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+               Cumque neque beatae fuga eius adipisci saepe vitae ad, vero quod laboriosam voluptas voluptates eveniet nemo, numquam 
+               dicta amet harum corporis unde.</span></p>
+               <p class="read-more">read more</p>
+          </div>
         </div>
     </div>
     </section>
