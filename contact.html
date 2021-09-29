@@ -9,23 +9,8 @@
       src="https://kit.fontawesome.com/c5495cedff.js"
       crossorigin="anonymous"
     >
-    function subscription(){
-      alert("Thank you for joining our newsletter");
-    }
-    function Validate(){
-      var name=document.getElementById("fname");
-      var surname=document.getElementById("Sname");
-      var infor=document.getElementById("messgae");
-      if(name.value.trim()==""|| surname.value.trim()==""||infor.value.trim()==""){
-        alert("no blank fields allowed");
-        return false;
-      }
-      else{
-        return true;
-      }
-  }
   </script>
-
+<script src="contact.js"></script>
     <title>Contact Us</title>
     <style>
       .Contact_container {
@@ -299,7 +284,7 @@
           <section>
             <header>Our Weekly Newsletter</header>
             <form action="">
-              <input type="email" placeholder="Enter your Email" id="" />
+              <input type="email" placeholder="Enter your Email" id="email" />
               <input type="submit" value="Sign-up" onclick="subscription()"/>
             </form>
           </section>
