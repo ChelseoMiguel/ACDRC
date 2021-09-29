@@ -22,3 +22,12 @@ function subscription(){
     alert("Thank you for joining our newsletter");
     }
   }
+
+  function preload(){
+    for(i=0;i<preload.arguments.length;i++){
+      pictures[i] = new Image();
+          pictures[i].src = preload.arguments[i];
+    }
+  
+  }
+  preload("pictures/ACDRC_Logo.jpg","pictures/annie-spratt-1YnBzhJISg4-unsplash.jpg", "pictures/farming.jpg");

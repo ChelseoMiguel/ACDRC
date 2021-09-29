@@ -21,3 +21,14 @@ function subscription(){
       return true;
     }
 }
+
+var pictures= new Array();
+
+function preload(){
+  for(i=0;i<preload.arguments.length;i++){
+    pictures[i] = new Image();
+        pictures[i].src = preload.arguments[i];
+  }
+
+}
+preload("pictures/ACDRC_Logo.jpg", "pictures/contact-icons.jpg", "pictures/Picture1.jpg");
