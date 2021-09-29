@@ -22,7 +22,7 @@ function subscription(){
     alert("Thank you for joining our newsletter");
     }
   }
-
+  var pictures= new Array();
   function preload(){
     for(i=0;i<preload.arguments.length;i++){
       pictures[i] = new Image();
