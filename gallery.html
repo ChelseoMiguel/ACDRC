@@ -120,9 +120,17 @@
       }
     </style>
     <script type="text/javascript">
-      function subscription(){
-        alert("Thank you for joining our newsletter");
-      }
+       function subscription(){
+    var emailInfo =document.getElementById("email");
+    if(emailInfo.value.trim() == "")
+    {
+        alert("please enter a valid email address");
+        
+    }
+    else{
+    alert("Thank you for joining our newsletter");
+    }
+  }
       </script>
   </head>
   <body>
@@ -170,7 +178,7 @@
           <section>
             <header>Our Weekly Newsletter</header>
             <form action="">
-              <input type="email" placeholder="Enter your Email" id="" />
+              <input type="email" placeholder="Enter your Email" id="email" />
               <input type="submit" value="Sign-up" onclick="subscription()"/>
             </form>
           </section>
