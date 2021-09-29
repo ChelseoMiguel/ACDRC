@@ -12,5 +12,13 @@ $(document).ready(function(){
     });
 })
 function subscription(){
+    var emailInfo =document.getElementById("email");
+    if(emailInfo.value.trim() == "")
+    {
+        alert("please enter a valid email address");
+        
+    }
+    else{
     alert("Thank you for joining our newsletter");
-}
+    }
+  }
