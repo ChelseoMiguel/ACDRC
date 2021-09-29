@@ -12,6 +12,18 @@
     function subscription(){
       alert("Thank you for joining our newsletter");
     }
+    function Validate(){
+      var name=document.getElementById("fname");
+      var surname=document.getElementById("Sname");
+      var infor=document.getElementById("messgae");
+      if(name.value.trim()==""|| surname.value.trim()==""||infor.value.trim()==""){
+        alert("no blank fields allowed")
+        return false;
+      }
+      else{
+        return true;
+      }
+  }
   </script>
 
     <title>Contact Us</title>
@@ -248,7 +260,7 @@
         <h2>Any Queries</h2>
         <p>For more information about our services leave a message:</p>
       </div>
-      <form action="action_page.php">
+      <form onsubmit="return Validate()" action="Submit-message.html">
         <label for="fname">First Name</label>
         <input
           type="text"
